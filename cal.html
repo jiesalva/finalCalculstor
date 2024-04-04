@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> Calculator</title>
+<link rel="stylesheet" href="style.css">
+<style>
+    
+</style>
+</head>
+<body>
+
+<div class="calculator">
+    <h2>Calculator</h2>
+    <form name="calculator">
+        <input type="text" class="display" id="display" name="display" readonly>
+        <div class="row">
+            <input type="button" class="button" value="7" onclick="document.calculator.display.value += '7'">
+            <input type="button" class="button" value="8" onclick="document.calculator.display.value += '8'">
+            <input type="button" class="button" value="9" onclick="document.calculator.display.value += '9'">
+            <input type="button" class="button" value="+" onclick="document.calculator.display.value += '+'">
+        </div>
+        <div class="row">
+            <input type="button" class="button" value="4" onclick="document.calculator.display.value += '4'">
+            <input type="button" class="button" value="5" onclick="document.calculator.display.value += '5'">
+            <input type="button" class="button" value="6" onclick="document.calculator.display.value += '6'">
+            <input type="button" class="button" value="-" onclick="document.calculator.display.value += '-'">
+        </div>
+        <div class="row">
+            <input type="button" class="button" value="1" onclick="document.calculator.display.value += '1'">
+            <input type="button" class="button" value="2" onclick="document.calculator.display.value += '2'">
+            <input type="button" class="button" value="3" onclick="document.calculator.display.value += '3'">
+            <input type="button" class="button" value="*" onclick="document.calculator.display.value += '*'">
+        </div>
+        <div class="row">
+            <input type="button" class="button" value="0" onclick="document.calculator.display.value += '0'">
+            <input type="button" class="button" value="." onclick="document.calculator.display.value += '.'">
+            <input type="button" class="button" value="=" onclick="document.calculator.display.value = eval(document.calculator.display.value)">
+            <input type="button" class="button" value="/" onclick="document.calculator.display.value += '/'">
+        </div>
+        <div class="row">
+            <input type="button" class="button" value="Clear" onclick="document.calculator.display.value = ''">
+        </div>
+    </form>
+</div>
+
+</body>
+</html>
